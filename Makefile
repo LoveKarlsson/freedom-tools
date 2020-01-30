@@ -421,8 +421,7 @@ $(BINDIR)/riscv64-unknown-elf-gcc-$(RGT_VERSION)-%.src.tar.gz: \
 
 $(OBJDIR)/%/stamps/riscv-gnu-toolchain/install.stamp: \
 		$(OBJDIR)/%/build/riscv-gnu-toolchain/build-gcc-newlib-stage2/stamp \
-		$(OBJDIR)/%/build/riscv-gnu-toolchain/build-gdb-py-newlib/stamp \
-		$(OBJDIR)/%/build/riscv-gnu-toolchain/build-picolibc/stamp
+		$(OBJDIR)/%/build/riscv-gnu-toolchain/build-gdb-py-newlib/stamp
 	mkdir -p $(dir $@)
 	date > $@
 
